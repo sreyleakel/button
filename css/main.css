@@ -1,0 +1,80 @@
+*{
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 80%;
+    margin: 0 auto;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.card{
+    width: 32%;
+    padding: 10px;
+    border-radius: 7px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    margin-top: 10px;
+}
+.card-title{
+    padding: 10px;
+    font-weight: 600;
+}
+.card-body{
+    padding: 10px;
+}
+
+.bt{
+    border-top: 3px solid rgb(52, 4, 65);
+}
+.btn{
+    margin-top: 10px;
+    display: flex;
+    width: 90%;
+    justify-content: center;
+}
+
+.btn a{
+    padding: 10px 25px;
+    background: orange;
+    text-decoration: none;
+    color: #fff;
+    box-sizing: border-box;
+}
+@media (min-width:955px) {
+    .btn{
+        flex-wrap: wrap;
+    }
+    .btn a{
+        margin: top 10px; 
+        width: 100%;
+    }
+}
+@media(max-width:900px){
+    .container{
+        flex-wrap: wrap;
+        
+    }
+    .card{
+        width: 49%;
+    }
+    .btn{
+        display: none;
+    }
+}
+
+@media(max-width:760px){
+    .card{
+        width: 100%;
+    }
+    .btn a{
+        margin: top 10px; 
+        width: 48%;
+    }
+    .btn{
+        display: flex;
+    }
+}
+
